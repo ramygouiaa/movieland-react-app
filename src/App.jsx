@@ -8,7 +8,10 @@ export default function App() {
   //http://www.omdbapi.com/?i=tt3896198&apikey=fc73afe7
   //http://www.omdbapi.com/?i=tt3896198&apikey=ef9e4d4e
 
-  const API_URL = `http://localhost:3000/api/v1/movie/`;
+  //proxy server
+  //https://omdb-proxy-server.onrender.com
+
+  const API_URL = `https://omdb-proxy-server.onrender.com/api/v1/movie/`;
   // State variables to store the search term and results
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
